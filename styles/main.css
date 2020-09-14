@@ -1,8 +1,10 @@
 /*RESET*/
 * {
   margin: 0px;
+  padding: 0px;
   border: 1px solid red;
   font-family: var(--font-type-adalab);
+  box-sizing: border-box;
 }
 
 /*VARIABLES*/
@@ -15,26 +17,28 @@
 
 /* header's styles"*/
 .header {
+  font-family: var(--font-type-adalab);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
   top: 0px;
   width: 100%;
-  padding: 10px 0;
   background-color: white;
+  padding-top: 10px; /*con margin se ve el fondo del main si se sube mucho*/
 }
 
 .menu {
-  width: 155px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 10px 0 13px 0;
 }
 .menu-item {
   list-style-type: none;
-  text-align: left;
   text-decoration-color: var(--text-menu-color);
   font: 16px;
+  padding: 10px; /*centro deja 20px entre items*/
 }
 .link {
   text-decoration-color: var(--text-menu-color);
@@ -44,20 +48,29 @@
 /* Body's styles */
 
 .main {
-  width: 100%;
   height: 100vh;
-  margin-top: 99px; /*lo que mide header + 13px*/
+  margin-top: 132px; /*lo que mide header*/
   background-color: var(--background-color-menu);
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--main-text-color);
-  font-size: 30px;
 }
 
 .title {
-  width: 100%;
-  height: auto;
-  margin: 0 50px;
+  font-family: var(--font-type-adalab);
+  font-weight: bold;
   text-align: center;
+  width: 155px; /*a ojo me parece como el logo de ancho*/
+  font-size: 30px;
+}
+
+/* ADDING MEDIAQUERIES*/
+
+@media all and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
 }
