@@ -29,14 +29,14 @@
 }
 
 .menu {
-  width: 100%;
+  width: 100%; /*en mov no se usa, desktop?*/
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*en mov nose usa*/
 }
 .menu-item {
   list-style-type: none;
   text-decoration-color: var(--text-menu-color);
-  font: 16px;
+  font-size: 16px;
   padding: 10px; /*centro deja 20px entre items*/
 }
 .link {
@@ -59,6 +59,7 @@
 .title {
   font-family: var(--font-type-adalab);
   text-align: center;
+  /* font-weight: bold; */
   width: 155px; /*a ojo me parece como el logo de ancho*/
   font-size: 30px;
 }
