@@ -29,9 +29,7 @@
 }
 
 .menu {
-  width: 100%; /*en mov no se usa, desktop?*/
   display: flex;
-  justify-content: space-between; /*en mov nose usa*/
 }
 .menu-item {
   list-style-type: none;
@@ -59,7 +57,6 @@
 .title {
   font-family: var(--font-type-adalab);
   text-align: center;
-  /* font-weight: bold; */
   width: 155px; /*a ojo me parece como el logo de ancho*/
   font-size: 30px;
 }
