@@ -1,7 +1,24 @@
 body {
-  padding: 2rem;
+  font-family: $font-type-adalab;
+}
+
+.main {
   height: 100vh;
-  background: url("../images/logo-adalab.png") center center no-repeat
-    $color-white;
-  font-family: $font-main;
+  margin-top: 110px; /*lo que mide header*/
+  background-color: $background-color-menu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-text-color;
+
+  @media all and (min-width: 768px) {
+    margin-top: 101px; /*para ajustar al header*/
+  }
+}
+
+.title {
+  text-align: center;
+  width: 155px; /*a ojo me parece como el logo de ancho*/
+  font-size: 40px;
+  text-transform: capitalize;
 }

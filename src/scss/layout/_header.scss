@@ -1,5 +1,34 @@
-.page__header {
+.header {
+  font-family: $font-type-adalab;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  padding-top: 10px; /*con margin se ve el fondo del main si se sube mucho*/
+
+  /*MEDIA QUERIES*/
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+}
+
+.menu {
+  display: flex;
+}
+.menu-item {
+  list-style-type: none;
+  text-decoration-color: $text-menu-color;
+  font-size: 16px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.link {
+  padding: 10px; /*centro deja 20px entre items. y aumenta el aera clicable*/
+  color: $text-menu-color;
+  text-decoration: none;
 }

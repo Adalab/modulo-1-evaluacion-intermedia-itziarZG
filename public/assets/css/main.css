@@ -2,22 +2,12 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-margin-before: 0em;
-  margin-block-start: 0em;
-  -webkit-margin-after: 0em;
-  margin-block-end: 0em;
   box-sizing: border-box; }
 
 /*VARIABLES*/
-:root {
-  --font-type-adalab: "Rubik", sans-serif;
-  --text-menu-color: #4a4a4a;
-  --background-color-menu: #3cdbc0;
-  --main-text-color: #ffffff; }
-
 /* header's styles"*/
 .header {
-  font-family: var(--font-type-adalab);
+  font-family: "Rubik", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,15 +16,21 @@
   width: 100%;
   background-color: white;
   padding-top: 10px;
-  /*con margin se ve el fondo del main si se sube mucho*/ }
+  /*con margin se ve el fondo del main si se sube mucho*/
+  /*MEDIA QUERIES*/ }
+  @media all and (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px 30px; } }
 
 .menu {
   display: flex; }
 
 .menu-item {
   list-style-type: none;
-  -webkit-text-decoration-color: var(--text-menu-color);
-  text-decoration-color: var(--text-menu-color);
+  -webkit-text-decoration-color: #4a4a4a;
+  text-decoration-color: #4a4a4a;
   font-size: 16px;
   margin: 10px 0;
   text-transform: uppercase; }
@@ -42,22 +38,26 @@
 .link {
   padding: 10px;
   /*centro deja 20px entre items. y aumenta el aera clicable*/
-  color: var(--text-menu-color);
+  color: #4a4a4a;
   text-decoration: none; }
 
 /* Body's styles */
 body {
-  font-family: var(--font-type-adalab); }
+  font-family: "Rubik", sans-serif; }
 
 .main {
   height: 100vh;
   margin-top: 110px;
   /*lo que mide header*/
-  background-color: var(--background-color-menu);
+  background-color: #3cdbc0;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--main-text-color); }
+  color: #ffffff; }
+  @media all and (min-width: 768px) {
+    .main {
+      margin-top: 101px;
+      /*para ajustar al header*/ } }
 
 .title {
   text-align: center;
@@ -65,15 +65,5 @@ body {
   /*a ojo me parece como el logo de ancho*/
   font-size: 40px;
   text-transform: capitalize; }
-
-/* ADDING MEDIAQUERIES*/
-@media all and (min-width: 768px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 30px; }
-  .main {
-    margin-top: 101px;
-    /*para ajustar al header*/ } }
 
 /*# sourceMappingURL=main.css.map */
