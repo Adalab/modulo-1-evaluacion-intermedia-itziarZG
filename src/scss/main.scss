@@ -35,14 +35,19 @@
   list-style-type: none;
   text-decoration-color: var(--text-menu-color);
   font-size: 16px;
-  padding: 10px; /*centro deja 20px entre items*/
+  margin: 10px 0;
+  text-transform: uppercase;
 }
 .link {
+  padding: 10px; /*centro deja 20px entre items. y aumenta el aera clicable*/
   color: var(--text-menu-color);
   text-decoration: none;
 }
 
 /* Body's styles */
+body {
+  font-family: var(--font-type-adalab);
+}
 
 .main {
   height: 100vh;
@@ -55,10 +60,10 @@
 }
 
 .title {
-  font-family: var(--font-type-adalab);
   text-align: center;
   width: 155px; /*a ojo me parece como el logo de ancho*/
-  font-size: 30px;
+  font-size: 40px;
+  text-transform: capitalize;
 }
 
 /* ADDING MEDIAQUERIES*/
